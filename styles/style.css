@@ -44,26 +44,27 @@ body{
 a, p, button, span {
     font-family: 'Bebas Neue', normal;
 }
-
+.lg-hvr{
+    transition: all 0.5s;
+}
+.lg-hvr:hover{
+    color: white !important;
+    filter: drop-shadow(1px 2px 7px rgb(221, 221, 221));
+}
 /* *Главная часть */
-    .navbar-dark .navbar-nav .nav-link {
-        color: rgb(253, 253, 253);
-    }
+
     .bg-dark{
         background: #0C0D0F !important;
     }
 
     .nav-link{
-        color: white;
+        color: rgb(173, 173, 173) !important;
         font-weight: normal;
         font-size: 20px;
         line-height: 20px;
         /* identical to box height */
 
         letter-spacing: 0.12em;
-    }
-    .nav-link:hover{
-        color: rgb(150, 150, 150);
     }
 
     .header-main{
@@ -191,11 +192,12 @@ a, p, button, span {
     height: 370px;
     background-image: url(../img/product2.png);
     background-size: cover;
-    transition: filter 0.5s;
+    transition: all 0.5s;
 }
 .bg-fon{
     height:100%;
     width:100%;
+    transition: all 0.5s;
 }
 .bg-fon:hover{
     background-color:rgba(0,0,0,0.2);
@@ -203,9 +205,11 @@ a, p, button, span {
 .icon1{
     color: rgb(187, 187, 187);
     display: none;
+    transition: all 0.5s;
 }
 .icon1:hover{
     color: white;
+    filter: drop-shadow(0px 4px 11px rgba(255, 255, 255, 0.938));
 }
 .imgproduct:hover{
     filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.32));
