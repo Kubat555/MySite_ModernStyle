@@ -1,24 +1,44 @@
 "use strict";
-// let ttl = document.getElementsByClassName("product_name");
-// console.log(ttl[0].innerText);
 
-// let prise = document.getElementsByClassName("product_prise");
-// console.log(prise[0].innerText);
-
-// var img = document.getElementById('product_img'),
-//   style = img.currentStyle || window.getComputedStyle(img, false),
-//   bi = style.backgroundImage.slice(4, -1).replace(/"/g, "");
-
-// // Display the url to the user
-// console.log('../img/product2.png ' + bi);
+let btnbag = document.getElementById("btnbag");
+let act = false;
+btnbag.onclick = function(){
+    if(act==false){
+        document.getElementById("bag").style.display = "inline";
+        act = true;
+    }
+    else{
+        document.getElementById("bag").style.display = "none";
+        act = false;
+    }
+};
 
 let element = document.getElementsByClassName("add_bag");
+var bag = document.getElementById("bag");
+var getinfo = function(){
+  var prdname = this.parentNode.parentNode.parentNode.querySelectorAll(".product_name");
+  var prdprise = this.parentNode.parentNode.parentNode.querySelectorAll(".product_prise");
+  var prdimg = this.parentNode.parentNode.parentNode.querySelectorAll(".imgproduct");
+  const styles = window.getComputedStyle(prdimg[0]);
+  console.log(styles.backgroundImage);
 
-var get_product_name = function(){
-  var product = this.parentNode.parentNode.parentNode.querySelectorAll(".product_name");
-  console.log(product[0].innerText);
+  var cart = document.createElement("div");
+  cart.className = "cart";
+  cart.innerHTML = `<img class="cart__img" src="./img/product2.png" alt=""><div class="cart__info"><p class="cart_name">${prdname[0].innerText}</p><p class="cart__prise">Цена: <span class="prise__num">${prdprise[0].innerText}</span> рублей</p><button id="bagbtn" class="btn lg-hvr btnbox bagbtn">удалить</button></div>`;
+  bag.append(cart);
 };
 
 for(var i = 0; i < element.length; i++){
-  element[i].addEventListener('click', get_product_name,false);
+  element[i].addEventListener('click', getinfo,false);
 }
+
+let deletebag = document.getElementsByClassName('bagbtn');
+var deleteinfo = function(){
+  var d = this.parentNode.parentNode;
+  console.log(d);
+}
+
+for(var i = 0; i < btnbag.length; i++){
+  btnbag[i].addEventListener('click', deleteinfo,false);
+}
+

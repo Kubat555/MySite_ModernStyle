@@ -40,15 +40,29 @@
                   </li>
                 </ul>
                 <div class="d-flex">
-                  <a  href=""><img src="./img/icons/user 1.svg" alt="" class="header__icons lg-hvr ms-3"></a>
-                  <a href=""><img src="./img/icons/search (2) 1.svg" alt="" class="header__icons lg-hvr ms-5"></a>
-                  <a href=""><img src="./img/icons/like 1.svg" alt="" class="header__icons lg-hvr ms-5"></a>
-                  <a href=""><img src="./img/icons/supermarket (4) 1.svg" alt="" class="header__icons lg-hvr ms-5"></a>
-                </div>
+                  <img src="./img/icons/user 1.svg" alt="" class="header__icons lg-hvr ms-3">
+                  <img src="./img/icons/search (2) 1.svg" alt="" class="header__icons lg-hvr ms-5">
+                  <img src="./img/icons/like 1.svg" alt="" class="header__icons lg-hvr ms-5">
+                  <img src="./img/icons/supermarket (4) 1.svg" alt="" id="btnbag" class="header__icons btnbag lg-hvr ms-5">
+                </>
               </div>
             </div>
           </nav>
+          <!-- TODO bag!!! -->
+          <div class="hiddenbag">
+            <div id="bag" class="bag">
+                <div class="cart">
+                    <img class="cart__img" src="./img/product2.png" alt="">
+                    <div class="cart__info">
+                        <p class="cart_name">Пиджак</p>
+                        <p class="cart__prise">Цена: <span class="prise__num">2000</span> рублей</p>
+                        <button class="btn lg-hvr btnbox bagbtn">удалить</button>
+                    </div>
+                </div>
+            </div>
+          </div>
     </header>
+
     <section class="header-main d-flex align-items-center">
         <div class="container-fluid text-center">
             <p class="header__H mx-auto ">
@@ -155,12 +169,12 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="product_text product_name">Пиджак</p>
-                        <p class="product_text product_prise">Цена 1985 рублей</p>
+                        <p class="product_text product_name">Пиджак 1</p>
+                        <p class="product_text ">Цена <span class="product_prise">1985</span> рублей</p>
                         <p class="product_text product_color">2 цвета</p>
                     </div>
                     <div class="product text-center col-lg-3 col-sm-5 mb-5">
-                        <div class="imgproduct mb-4  " id="product_img">
+                        <div class="imgproduct mb-4  " >
                             <div class="bg-fon d-flex flex-column justify-content-center align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart-fill icon1 add_favorites mb-5" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
@@ -170,12 +184,12 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="product_text product_name">Пиджак</p>
-                        <p class="product_text product_prise">Цена 1985 рублей</p>
+                        <p class="product_text product_name">Пиджак 2</p>
+                        <p class="product_text">Цена <span class="product_prise">5555</span> рублей</p>
                         <p class="product_text product_color">2 цвета</p>
                     </div>
                     <div class="product text-center col-lg-3 col-sm-5 mb-5">
-                        <div class="imgproduct mb-4  " id="product_img">
+                        <div class="imgproduct mb-4  " >
                             <div class="bg-fon d-flex flex-column justify-content-center align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart-fill icon1 add_favorites mb-5" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
@@ -185,12 +199,12 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="product_text product_name">Пиджак</p>
-                        <p class="product_text product_prise">Цена 1985 рублей</p>
+                        <p class="product_text product_name">Пиджак 3</p>
+                        <p class="product_text ">Цена <span class="product_prise">7554</span> рублей</p>
                         <p class="product_text product_color">2 цвета</p>
                     </div>
                     <div class="product text-center col-lg-3 col-sm-5 mb-5">
-                        <div class="imgproduct mb-4  " id="product_img">
+                        <div class="imgproduct mb-4  " >
                             <div class="bg-fon d-flex flex-column justify-content-center align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart-fill icon1 add_favorites mb-5" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
@@ -200,12 +214,12 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="product_text product_name">Пиджак</p>
-                        <p class="product_text product_prise">Цена 1985 рублей</p>
+                        <p class="product_text product_name">Пиджак 4</p>
+                        <p class="product_text ">Цена <span class="product_prise">4212</span> рублей</p>
                         <p class="product_text product_color">2 цвета</p>
                     </div>
                     <div class="product text-center col-lg-3 col-sm-5 mb-5">
-                        <div class="imgproduct mb-4  " id="product_img">
+                        <div class="imgproduct mb-4  " >
                             <div class="bg-fon d-flex flex-column justify-content-center align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart-fill icon1 add_favorites mb-5" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
@@ -215,12 +229,12 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="product_text product_name">Пиджак</p>
-                        <p class="product_text product_prise">Цена 1985 рублей</p>
+                        <p class="product_text product_name">Пиджак 5</p>
+                        <p class="product_text ">Цена <span class="product_prise">1234</span> рублей</p>
                         <p class="product_text product_color">2 цвета</p>
                     </div>
                     <div class="product text-center col-lg-3 col-sm-5 mb-5">
-                        <div class="imgproduct mb-4  " id="product_img">
+                        <div class="imgproduct mb-4  " >
                             <div class="bg-fon d-flex flex-column justify-content-center align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart-fill icon1 add_favorites mb-5" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
@@ -230,12 +244,12 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="product_text product_name">Пиджак</p>
-                        <p class="product_text product_prise">Цена 1985 рублей</p>
+                        <p class="product_text product_name">Пиджак 6</p>
+                        <p class="product_text ">Цена <span class="product_prise">2222</span> рублей</p>
                         <p class="product_text product_color">2 цвета</p>
                     </div>
                     <div class="product text-center col-lg-3 col-sm-5 mb-5">
-                        <div class="imgproduct mb-4  " id="product_img">
+                        <div class="imgproduct mb-4  " >
                             <div class="bg-fon d-flex flex-column justify-content-center align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart-fill icon1 add_favorites mb-5" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
@@ -245,12 +259,12 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="product_text product_name">Пиджак</p>
-                        <p class="product_text product_prise">Цена 1985 рублей</p>
+                        <p class="product_text product_name">Пиджак 7</p>
+                        <p class="product_text ">Цена <span class="product_prise">3333</span> рублей</p>
                         <p class="product_text product_color">2 цвета</p>
                     </div>
                     <div class="product text-center col-lg-3 col-sm-5 mb-5">
-                        <div class="imgproduct mb-4  " id="product_img">
+                        <div class="imgproduct mb-4  " >
                             <div class="bg-fon d-flex flex-column justify-content-center align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart-fill icon1 add_favorites mb-5" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
@@ -260,8 +274,8 @@
                                 </svg>
                             </div>
                         </div>
-                        <p class="product_text product_name">Пиджак</p>
-                        <p class="product_text product_prise">Цена 1985 рублей</p>
+                        <p class="product_text product_name">Пиджак 8</p>
+                        <p class="product_text ">Цена <span class="product_prise">4444</span> рублей</p>
                         <p class="product_text product_color">2 цвета</p>
                     </div>
                 </div>

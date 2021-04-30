@@ -123,7 +123,60 @@ a, p, button, span {
         background-color:white;
         color: black !important;
     }
-
+    .header__icons{
+        cursor: pointer;
+    }
+    /* !Bag */
+    .bag {
+        transition: all 2s;
+        position:fixed;
+        display: none;
+        top: 77px;
+        right: 0px;
+        width: 500px;
+        background:  #0C0D0F;
+        z-index: 50!important;
+        filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.548));
+    }
+    .cart {
+        margin: 20px auto;
+        width: 90%;
+        display: flex;
+    }
+    .cart__img{
+        width: 148.57px;
+        height: 212px;
+        margin-right: 30px;
+    }
+    .cart__info {
+        padding: 30px 0;
+    }
+    .cart_name {
+        font-family: Bebas Neue;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 20px;
+        color: #ffffff;
+    }
+    .prise__num{
+        margin-left: 10px;
+    }
+    .cart__prise {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        color: white;
+    }
+    .bagbtn{
+        font-size: 17px!important;
+        margin-top: 45px;
+        width: 90px!important;
+        height: 37px!important;
+    }
 /* *-------------------------------- */
 
 /* *Контент */
