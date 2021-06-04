@@ -128,15 +128,21 @@ a, p, button, span {
     }
     /* !Bag */
     .bag {
+        overflow: scroll;
         transition: all 2s;
         position:fixed;
         display: none;
         top: 77px;
         right: 0px;
+        max-height: 570px;
         width: 500px;
         background:  #0C0D0F;
         z-index: 50!important;
         filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.548));
+    }
+    .buy__carts{
+        text-align: center;
+        padding: 20px 0;
     }
     .cart {
         margin: 20px auto;
@@ -144,12 +150,12 @@ a, p, button, span {
         display: flex;
     }
     .cart__img{
-        width: 148.57px;
-        height: 212px;
+        width: 111px;
+        height: 159px;
         margin-right: 30px;
     }
     .cart__info {
-        padding: 30px 0;
+        padding: 15px 0;
     }
     .cart_name {
         font-family: Bebas Neue;
@@ -171,11 +177,20 @@ a, p, button, span {
         line-height: 23px;
         color: white;
     }
-    .bagbtn{
+    .delbtn{
         font-size: 17px!important;
-        margin-top: 45px;
+        margin-top: 10px;
         width: 90px!important;
         height: 37px!important;
+    }
+    .tprise{
+        font-family: Bebas Neue;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 20px;
+        color: #ffffff;
     }
 /* *-------------------------------- */
 
